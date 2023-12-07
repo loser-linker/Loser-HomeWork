@@ -1,88 +1,91 @@
-<div align=center>
-<a href = "https://www.bilibili.com/video/BV1Zj411r7eP/?spm_id_from=333.999.0.0"><img src="https://img.shields.io/badge/%E8%A7%86%E9%A2%91%E6%95%99%E7%A8%8B-bilibili-cyan"/></a>
-<a target="_blank" href = "https://qm.qq.com/cgi-bin/qm/qr?k=X-ouAYdQzPDQGUR7R-vECHDpXb7Uihdm&jump_from=webapi&authKey=5XYoNIfb913mo5Ff3P1nOhVy1pJgCM4Q6wAykQ+rpiDQSRu+tCXMN6yGOkjxIIrl"><img src="https://img.shields.io/badge/QQ%E7%BE%A4-%E5%8D%A2%E7%91%9F%E5%B8%9D%E5%9B%BD-blue"/></a>
-<a href="https://www.zhihu.com/people/o4ze4r"><img src="https://img.shields.io/badge/%E7%9F%A5%E4%B9%8E-mq%E7%99%BD-yello"/></a>
-<a href="https://www.youtube.com/channel/UCey35Do4RGewqr-6EiaCJrg"><img src="https://img.shields.io/badge/video-YouTube-red"></a>
-<br>
-<a href = "https://learn.microsoft.com/zh-cn/cpp/cpp/welcome-back-to-cpp-modern-cpp?view=msvc-170">
-<img src="https://img.shields.io/badge/code-Modern%20C++-blue"></a>
-<a href = "https://zh.cppreference.com/w/cpp/compiler_support/20">
-<img src="https://img.shields.io/badge/std-C++20-yello"></a>
-<a href = "https://zh.cppreference.com/w/cpp/compiler_support/23">
-<img src= "https://img.shields.io/badge/std-C++23-yello"></a>
-<a href= "https://gcc.gnu.org/onlinedocs/gcc-12.2.0/gcc/">
-<img src= "https://img.shields.io/badge/compiler-GCC13-white"></a>
-<a href = "https://learn.microsoft.com/zh-cn/cpp/cpp/?view=msvc-170"><img src="https://img.shields.io/badge/compiler-Microsoft Visual Studio Community 2022 (64 位) -white"></a>
-<br>
-<a href="https://zh.cppreference.com/w/cpp">
-<img src="image/cpp.svg" height="64" width="64"></a>
+<div id="img" align=center>
+    
+[![视频教程](https://img.shields.io/badge/%E8%A7%86%E9%A2%91%E6%95%99%E7%A8%8B-bilibili-cyan)](https://www.bilibili.com/video/BV1Zj411r7eP)
+[![QQ群](https://img.shields.io/badge/QQ%E7%BE%A4-%E5%8D%A2%E7%91%9F%E5%B8%9D%E5%9B%BD-blue)](https://qm.qq.com/cgi-bin/qm/qr?k=X-ouAYdQzPDQGUR7R-vECHDpXb7Uihdm&jump_from=webapi&authKey=5XYoNIfb913mo5Ff3P1nOhVy1pJgCM4Q6wAykQ+rpiDQSRu+tCXMN6yGOkjxIIrl)
+[![知乎](https://img.shields.io/badge/%E7%9F%A5%E4%B9%8E-mq%E7%99%BD-yello)](https://www.zhihu.com/people/o4ze4r)
+[![youtube](https://img.shields.io/badge/video-YouTube-red)](https://www.youtube.com/channel/UCey35Do4RGewqr-6EiaCJrg)
 
+[![modern cpp](https://img.shields.io/badge/code-Modern%20C++-blue)](https://learn.microsoft.com/zh-cn/cpp/cpp/welcome-back-to-cpp-modern-cpp)
+[![cpp2b](https://img.shields.io/badge/std-C++20/23/26-yello)](https://zh.cppreference.com/w/cpp/compiler_support)
+[![gcc](https://img.shields.io/badge/compiler-GCC13-white)](https://gcc.gnu.org/onlinedocs/13.2.0/)
+[![msvc](https://img.shields.io/badge/compiler-MSVC19.37-white)](https://learn.microsoft.com/zh-cn/cpp/cpp)
+[![clang](https://img.shields.io/badge/compiler-clang17-white)](https://releases.llvm.org/17.0.1/tools/clang/docs/)
+
+</div>
+<div id="img" align=center>
+    <a herf="https://zh.cppreference.com/w/cpp"><img src="image/cpp.svg" width=64px alt="cpp"/></a>
 </div>
 
 <details>
-<summary><h2>目录</h2></summary>
+    <summary style="font-size:150%">目录</summary>
 
-- [Loser-HomeWork](#loser-homework)
-  - [前言](#前言)
-  - [`01` 实现管道运算符](#01-实现管道运算符)
-    - [运行结果](#运行结果)
-    - [群友提交](#群友提交)
-    - [标准答案](#标准答案)
-  - [`02` 实现自定义字面量 `_f`](#02-实现自定义字面量-_f)
-    - [运行结果](#运行结果-1)
-    - [群友提交](#群友提交-1)
-    - [标准答案](#标准答案-1)
-  - [`03` 实现 `print` 以及特化 `std::formatter`](#03-实现-print-以及特化-stdformatter)
-    - [运行结果](#运行结果-2)
-    - [群友提交](#群友提交-2)
-    - [标准答案](#标准答案-2)
-  - [`04` 给定模板类修改，让其对每一个不同类型实例化有不同 ID](#04-给定模板类修改让其对每一个不同类型实例化有不同-id)
-    - [运行结果](#运行结果-3)
-    - [群友提交](#群友提交-3)
-    - [标准答案](#标准答案-3)
-  - [`05` 实现 `scope_guard` 类型](#05-实现-scope_guard-类型)
-    - [运行结果](#运行结果-4)
-    - [群友提交](#群友提交-4)
-    - [标准答案](#标准答案-4)
-  - [`06` 解释 `std::atomic` 初始化](#06-解释-stdatomic-初始化)
-    - [群友提交](#群友提交-5)
-    - [标准答案](#标准答案-5)
-  - [`07` `throw new MyException`](#07-throw-new-myexception)
-    - [运行结果](#运行结果-5)
-    - [群友提交](#群友提交-6)
-    - [标准答案](#标准答案-6)
-  - [`08` 定义`array`推导指引](#08-定义array推导指引)
-    - [运行结果](#运行结果-6)
-    - [群友提交](#群友提交-7)
-    - [标准答案](#标准答案-7)
-  - [`09` 名字查找的问题](#09-名字查找的问题)
-    - [运行结果](#运行结果-7)
-    - [群友提交](#群友提交-8)
-    - [标准答案](#标准答案-8)
-  - [`10` 遍历任意类数据成员](#10-遍历任意类数据成员)
-    - [运行结果](#运行结果-8)
-    - [群友提交](#群友提交-9)
-    - [标准答案](#标准答案-9)
-      - [`C++17` 写法](#c17-写法)
-      - [`C++20` 写法](#c20-写法)
-      - [补充说明](#补充说明)
-        - [运行结果](#运行结果-9)
-        - [运行结果](#运行结果-10)
-  - [`11` `emplace_back()` 的问题](#11-emplace_back-的问题)
-    - [群友提交](#群友提交-10)
-    - [标准答案](#标准答案-10)
-  - [`12` 实现`make_vector()`](#12-实现make_vector)
-    - [运行结果](#运行结果-11)
-    - [群友提交](#群友提交-11)
-    - [标准答案](#标准答案-11)
-      - [运行结果：](#运行结果-12)
-  - [`13` 关于 `return std::move`](#13-关于-return-stdmove)
-    - [群友提交](#群友提交-12)
-    - [标准答案](#标准答案-12)
+- [前言](#前言)
+- [`01` 实现管道运算符](#01-实现管道运算符)
+  - [运行结果](#运行结果)
+  - [群友提交](#群友提交)
+  - [标准答案](#标准答案)
+  - [解析](#解析)
+- [`02` 实现自定义字面量 `_f`](#02-实现自定义字面量-_f)
+  - [运行结果](#运行结果-1)
+  - [群友提交](#群友提交-1)
+  - [标准答案](#标准答案-1)
+  - [解析](#解析-1)
+- [`03` 实现 `print` 以及特化 `std::formatter`](#03-实现-print-以及特化-stdformatter)
+  - [运行结果](#运行结果-2)
+  - [群友提交](#群友提交-2)
+  - [标准答案](#标准答案-2)
+  - [解析](#解析-2)
+- [`04` 给定类模板修改，让其对每一个不同类型实例化有不同 ID](#04-给定类模板修改让其对每一个不同类型实例化有不同-id)
+  - [运行结果](#运行结果-3)
+  - [群友提交](#群友提交-3)
+  - [标准答案](#标准答案-3)
+- [`05` 实现 `scope_guard` 类型](#05-实现-scope_guard-类型)
+  - [运行结果](#运行结果-4)
+  - [群友提交](#群友提交-4)
+  - [标准答案](#标准答案-4)
+- [`06` 解释 `std::atomic` 初始化](#06-解释-stdatomic-初始化)
+  - [群友提交](#群友提交-5)
+  - [标准答案](#标准答案-5)
+- [`07` `throw new MyException`](#07-throw-new-myexception)
+  - [运行结果](#运行结果-5)
+  - [群友提交](#群友提交-6)
+  - [标准答案](#标准答案-6)
+- [`08` 定义`array`推导指引](#08-定义array推导指引)
+  - [运行结果](#运行结果-6)
+  - [群友提交](#群友提交-7)
+  - [标准答案](#标准答案-7)
+- [`09` 名字查找的问题](#09-名字查找的问题)
+  - [运行结果](#运行结果-7)
+  - [群友提交](#群友提交-8)
+  - [标准答案](#标准答案-8)
+- [`10` 遍历任意类数据成员](#10-遍历任意类数据成员)
+  - [运行结果](#运行结果-8)
+  - [群友提交](#群友提交-9)
+  - [标准答案](#标准答案-9)
+    - [`C++17` 写法](#c17-写法)
+    - [`C++20` 写法](#c20-写法)
+  - [补充说明](#补充说明)
+- [`11` `emplace_back()` 的问题](#11-emplace_back-的问题)
+  - [群友提交](#群友提交-10)
+  - [标准答案](#标准答案-10)
+- [`12` 实现`make_vector()`](#12-实现make_vector)
+  - [运行结果](#运行结果-9)
+  - [群友提交](#群友提交-11)
+  - [标准答案](#标准答案-11)
+    - [运行结果](#运行结果-10)
+- [`13` 关于 `return std::move`](#13-关于-return-stdmove)
+  - [群友提交](#群友提交-12)
+  - [标准答案](#标准答案-12)
+- [`14` 以特殊方法修改命名空间中声明的对象](#14-以特殊方法修改命名空间中声明的对象)
+  - [运行结果](#运行结果-11)
+  - [群友提交](#群友提交-13)
+  - [标准答案](#标准答案-13)
+    - [利用符号来解决](#利用符号来解决)
+    - [直接修改内存](#直接修改内存)
 
 </details>
 
-# Loser-HomeWork
+---
 
 ## 前言
 
@@ -114,7 +117,7 @@ int main(){
 
 ### 运行结果
 
-```
+```text
 1 4 9
 ```
 
@@ -208,7 +211,44 @@ std::vector<int>& operator|(auto& v1, const auto& f) {
 }
 ```
 
-**各种范式无非就是这些改来改去了，没必要再写。**
+**各种其他答案的范式无非就是这些改来改去了，没必要再写。**
+### 解析
+很明显我们需要重载管道运算符 |，根据我们的调用形式 `v | f2 | f`, 这种链式的调用，以及根据给出运行结果，我们可以知道，重载函数应当返回 v 的引用，并且 v 会被修改。
+`v | f2` 调用 `operator |`，operator | 中使用 f2 遍历了 v 中的每一个元素，然后返回 v 的引用，再 | f。
+
+```c++
+template<typename  U,typename F>
+requires std::regular_invocable<F, U&> //我们可以认为对模板形参U，F满足std::regular_invocable的约束
+```
+
+如果没接触过约束表达式，没关系，下面将简要的介绍。
+
+requires 表达式如同一个返回 bool 的函数，而U和F作为类型填入 std::regular_invocable 的实参列表里，只要作为类型的U，F满足该表达式则返回true;不满足则返回 false，称为“不满足约束”。不满足约束的类型自然不会执行后续的代码。而 [std::regular_invocable](https://zh.cppreference.com/w/cpp/concepts/invocable) 我们可以简单看成对类型U的每一个值，我们是否可以调用函数F，即调用 `std::invoke` 。相当于我们在编译期对运行期做了想象，想象一下可以对U在运行期执行F吗？如果可以那满足约束。
+
+而函数主体则极为简单
+
+```c++
+std::vector<U>& operator|(std::vector<U>& v1, const F f) {
+    for (auto& i : v1) {
+        f(i);
+    }
+    return v1;
+}
+```
+
+其中[范围表达式](https://zh.cppreference.com/w/cpp/language/range-for) `for (auto& i : v1)`,如同`for(auto i=v.begin();i=v.end();++i){f(*i)}` 我们对*vector*（范围）中的每一个元素应用一次**f**函数。返回时照常返回v1。
+
+如若不使用模板，则我们的形参列表得用 [std::function](https://zh.cppreference.com/w/cpp/utility/functional/function) 来接住我们使用的函数。对范围中的每个成员应用**f**不需要返回值且需要对范围中的元素进行修改，所以第二个形参为 `std::function<void(int&)>`，并且我们不需要对传进来的函数 **f** 进行修改与拷贝，所以加上 **const** 限定是个好习惯。
+
+同样的我们可以不使用范围 for 而是更简单的 `std::ranges::for_each(v1, f);` 即同上一样对范围v1内的每个元素，应用一次函数 **f**。
+
+对于使用模板的形式，我们可以使用 c++20 的简写函数模板；简而言之，在函数形参列表中 auto 占位符会为模板形参列表追加一个虚设的模板形参。最开始的模板形式可以写成
+
+```c++
+std::vector<int>& operator|(auto& v1, const auto& f) 
+``` 
+
+它和原形式相同。
 
 ---
 
@@ -234,7 +274,7 @@ int main(){
 
 ### 运行结果
 
-```
+```text
 乐 :5 *
 乐 :5 5 *
 乐 :1010101 *
@@ -251,7 +291,7 @@ int main(){
 
 ### [群友提交](src/群友提交/第02题)
 
-答题者：[**`andyli`**](/src/群友提交/第02题/andyli.cpp)
+答题者：[**`andyli`**](src/群友提交/第02题/andyli.cpp)
 
 ```cpp
 #include <format>
@@ -293,6 +333,70 @@ constexpr auto operator""_f(const char* fmt, size_t) {
 }
 ```
 
+### 解析
+
+我们需要使用到 C++11 用户定义字面量，`""_f` 正是[用户自定义字面量](https://zh.cppreference.com/w/cpp/language/user_literal)，但**字面量运算符**（用户定义字面量所调用的函数被称为字面量运算符）的形参列表有一些限制，我们需要的是 `(const char *,std::size_t)` 这样的形参列表，恰好这是允许的；而字面量运算符的返回类型，我们需要自定义，这个类型需要在内部重载 **`()`** 运算符，以满足上述字面量像函数一样调用的要求。
+
+我们一步一步来：
+
+```c++
+void operator""_test(const char* str, std::size_t){
+    std::cout << str << '\n';
+}
+
+"luse"_test; //调用了字面量运算符，打印 luse
+
+std::size_t operator""_test(const char* , std::size_t len){
+    return len;
+}
+
+std::size_t len = "luse"_test; //调用了字面量运算符，返回 luse 的长度 4
+```
+
+上面这段代码的两个使用示例展示了我们用户定义字面量的基本使用，尤其注意第二段，**返回值**。如果要做到像 `"xxx"_f(xxx)` 这样调用，就得在返回类型上做点手脚。
+
+```cpp
+struct X{
+    std::size_t operator()(std::size_t n)const{
+        return n;
+    }
+};
+
+X operator""_test(const char* , std::size_t){
+    return {};
+}
+
+std::cout<<"无意义"_test(1); //打印 1
+```
+
+以上这段简单的代码很好的完成了我们需要的调用形式，那么是时候完成题目要求的功能了。最简单的方式是直接使用 C++20 format 库进行格式化。
+
+```cpp
+namespace impl {
+    struct Helper {
+        const std::string_view s;
+        Helper(const char* s, std::size_t len): s(s, len) {}
+        template <typename... Args>
+        std::string operator()(Args&&... args) const {
+            return std::vformat(s, std::make_format_args(std::forward<Args>(args)...));
+        }
+    };
+} // namespace impl
+impl::Helper operator""_f(const char* s, std::size_t len) noexcept {
+    return {s, len};
+}
+```
+
+`operator""_f` 本身非常简单，只是用来把传入的参数（格式字符串）和长度，构造 `mpl::Helper` 对象再返回。`Helper` 类型使用了一个 `string_veiw` 作为数据成员，存储了格式字符串，以供后面格式化使用。
+
+**重点只在于 `operator()`。** 它是一个变参模板，用来接取我们传入的任意类型和个数的参数，然后返回格式化后的字符串。
+
+这里用到的是 `std::vformat` 进行格式化，它的第一个参数是格式字符串，也就是我们要按照什么样的规则去格式化；第二个参数是要格式化的参数，但是我们没有办法直接进行形参包展开，它第二个参数的类型实际上是 `std::format_args`。 我们必须使用 `std::make_format_args` 函数传入我们的参数，它会返回 `std::format_args` 类型，其实也就是相当于转换一下，合理。
+
+不过显然标准答案不是这样的，还能简化，直接让 `""_f` 返回一个 lambda 表达式即可。
+
+---
+
 ## `03` 实现 `print` 以及特化 `std::formatter`
 
 日期：**`2023/7/24`** 出题人：**`mq白`**
@@ -319,19 +423,19 @@ print("{}", f);// 结果为1/10
 
 ### 运行结果
 
-```
+```text
 1/10
 ```
 
 - 难度：**★★★☆☆**
 
-禁止面相结果编程，使用宏等等方式，最多`B`（指评价），本作业主要考察和学习`format`库罢了。
+禁止面向结果编程，使用宏等等方式，最多`B`（指评价），本作业主要考察和学习`format`库罢了。
 
 提示: **`std::formatter`**
 
-> 提交代码最好是网上编译了三个平台的截图，如：
->
-> ![图片](image/第03题/01展示.jpg)
+提交代码最好是网上编译了三个平台的截图，如：
+
+![图片](image/第03题/01展示.jpg)
 
 ### [群友提交](src/群友提交/第03题)
 
@@ -353,9 +457,44 @@ void print(std::string_view fmt,auto&&...args){
 简单的特化以及 [`std::formatter`](https://zh.cppreference.com/w/cpp/utility/format/formatter) 支持的形式可以参见[**文档**](https://zh.cppreference.com/w/cpp/utility/format/formatter)。
 一些复杂的特化，up之前也有写过，在 [**`Cookbook`**](https://github.com/Mq-b/Cpp20-STL-Cookbook-src#76%E4%BD%BF%E7%94%A8%E6%A0%BC%E5%BC%8F%E5%BA%93%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%96%87%E6%9C%AC) 中，里面有对 [`std::ranges::range`](https://zh.cppreference.com/w/cpp/ranges/range) 和 [`std::tuple`](https://zh.cppreference.com/w/cpp/utility/tuple) 的特化，支持所有形式。
 
+### 解析
+
+实现一个 print 很简单，我们只要按第二题的思路来就行了，一个格式化字符串，用 std::string_view 做第一个形参，另外需要任意参数和个数，使用形参包即可。
+
+```c++
+void print(std::string_view fmt,auto&&...args){
+    std::cout << std::vformat(fmt, std::make_format_args(std::forward<decltype(args)>(args)...));
+}
+```
+
+此处我们没有显示声明模板形参，所以展开时不能使用以往的模板形参做完美转发的模板实参，但是根据形参包展开的规则。例
+`args...`展开成`args1,args2,args3...`,而上式展开成
+
+```c++
+std::forward<decltype(args1)>(args1),
+std::forward<decltype(args2)>(arsg2),
+std::forward<decltype(args3)>(args3),... 
+```
+
+这样我们对每个应用到的参数用 decltype 取他的类型再作为完美转发的模板参数。这样调用 `vformat`,返回string,可以使用cout直接输出。
+
+而自定义类型，特化std::formatter;我们需要知道的是:想要自定义**std::formatter** 模板特化需要提供两个函数，**parse和format**,**parse** 用来处理格式说明，并且设置相关的成员变量,相对于本题我们不需要如此麻烦的写此成员函数;我们选择继承`std::formatter<char>`的 **parse** 函数，独立实现 **format** 函数。此处模板特化的语法,不了解请复习[模板特化](https://zh.cppreference.com/w/cpp/language/template_specialization)。
+
+```c++
+template<>
+struct std::formatter<Frac>:std::formatter<char>{
+    auto format(const auto& frac, auto& ctx)const{//const修饰是必须的
+        return std::format_to(ctx.out(), "{}/{}", frac.a, frac.b);
+    }
+};
+```
+
+我们同样使用**auto**作占位符的简写函数模板，对于**format**函数，首个参数为我们传递的自定义类，第二个参数(**ctx**)为我们要传递给`std::format_to`输出迭代器的格式字符串。在函数体中我们直接返回`std::format_to()`调用表达式的结果,此函数返回输出迭代器;返回值我们使用**auto**占位符进行返回值推导。在函数实参中,`ctx.out`即为输出迭代器，第二个参数为可转换为**std::string_view**或**std::wstring_view**,而转换结果是常量表达式和 Args 的合法格式字符串。本题中我们填入我们需要的形式即`{}/{}`我们想要两个参数塞到 **{ }**,就如我们使用`printf(%d,x)`一样；最后两个参数为“需要塞进 **{ }** 的值”,即要格式化的参数。
+
 ---
 
-## `04` 给定模板类修改，让其对每一个不同类型实例化有不同 ID
+
+## `04` 给定类模板修改，让其对每一个不同类型实例化有不同 ID
 
 日期：**`2023/7/25`** 出题人：**`Maxy`**
 
@@ -393,7 +532,7 @@ int main()
 
 ### 运行结果
 
-```
+```text
 0
 1
 1
@@ -404,9 +543,9 @@ int main()
 
 - 难度:**★☆☆☆☆**
 
-> 提交应当给出多平台测试结果，如图：
->
-> ![图片](image/第04题/01展示.png)
+提交应当给出多平台测试结果，如图：
+
+![图片](image/第04题/01展示.png)
 
 ### [群友提交](src/群友提交/第04题)
 
@@ -436,26 +575,26 @@ A::component_type_id()
 题目要求是每一个自定义类类型（假设是X）继承 `Component<X>`，调用 `component_type_id()` 返回的是自己独一无二的ID。其他的类型同理。
 
 解决题目之前我们需要强调一个知识点：
-> C++ 的模板不是具体类型，实例化之后才是，模板类的静态成员或静态成员函数也**不属于模板**我们可以用一段代码来展示结论：
+> C++ 的模板不是具体类型，实例化之后才是（即**函数模板不是函数，类模板不是类**），类模板的静态成员或静态成员函数也不属于模板，而是属于**实例化后的具体类型**，我们可以用一段代码来展示结论：
 
 ```cpp
 #include <iostream>
 
 template<typename T>
 struct Test{
- inline static int n = 10;
+    inline static int n = 10;
 };
 
 int main(){
- Test<int>::n = 1;
- std::cout << Test<void>::n << '\n';//10
- std::cout << Test<int>::n << '\n';//1
+    Test<int>::n = 1;
+    std::cout << Test<void>::n << '\n';//10
+    std::cout << Test<int>::n << '\n';//1
 }
 ```
 
-这段代码很轻易的就展示了**静态数据成员属于模板实例化后的具体类型** `Test<void>::n` 和 `Test<int>::n` 不是相同的n，并且 `Test<void>` 和 `Test<int>` 也不是一种类型（静态成员函数同理）。
+这段代码很轻易的就展示了**静态数据成员属于模板实例化后的具体类型**。`Test<void>::n` 和 `Test<int>::n` 不是相同的n，并且 `Test<void>` 和 `Test<int>` 也不是一种类型（静态成员函数同理）。
 
-所以我们的解法利用的是：不同的类型实例化 `Component` 类模板，也是不同的静态成员函数，静态成员函数里面的局部静态数据成员在第一次调用的时候才会初始化，后面就不会。
+所以我们的解法利用的是：不同的类型实例化 `Component` 类模板，也是不同的静态成员函数，静态成员函数里面的静态局部也都是唯一的，并且在第一次调用的时候才会初始化，后面就不会。
 
 ---
 
@@ -529,7 +668,7 @@ int main() {
 
 ### 运行结果
 
-```shell
+```text
 Test
 ----------
 X()
@@ -636,8 +775,6 @@ C++17 的改动是：**复制消除变为强制要求**。
 
 ---
 
-<br>
-
 ## `07` `throw new MyException`
 
 日期：**`2023/8/6`** 出题人：**`mq白`**
@@ -665,7 +802,7 @@ int main(){
 
 ### 运行结果
 
-```
+```text
 MyException()
 new Exception异常....
 ~MyException()
@@ -724,7 +861,7 @@ int main() {
 
 ### 运行结果
 
-```
+```text
 1 2 3 4 5 
 ```
 
@@ -784,7 +921,7 @@ int main() {
 
 ### 运行结果
 
-```
+```text
 X
 全局
 ```
@@ -802,18 +939,15 @@ X
 
 根据我们的提示 **名字查找**，我看大家多少都还是能查到一些东西。我们慢慢说吧，首先名字查找分为：**有限定** 名字查找，**无限定** 名字查找。
 
-<details>
-<summary><h4>有限定名字查找指？</h4></summary>
-
-出现在作用域解析操作符 `::` 右边的名字是限定名（参阅有限定的标识符）。 限定名可能代表的是：
-
-- 类的成员（包括静态和非静态函数、类型和模板等）
-- 命名空间的成员（包括其他的命名空间）
-- 枚举项
+> 有限定名字查找指？
+>  
+> 出现在作用域解析操作符 `::` 右边的名字是限定名（参阅有限定的标识符）。 限定名可能代表的是：
+>  
+> - 类的成员（包括静态和非静态函数、类型和模板等）
+> - 命名空间的成员（包括其他的命名空间）
+> - 枚举项
 
 如果 `::` 左边为空，那么查找过程只会考虑全局命名空间作用域中作出（或通过 using 声明引入到全局命名空间中）的声明。
-
-</details>
 
 ```cpp
 this->f();
@@ -843,6 +977,8 @@ this->f();
 
 ## `10` 遍历任意类数据成员
 
+出题人：`mq白` 日期：`2023/8/18`
+
 题目的要求非常简单，在很多其他语言里也经常提供这种东西（一般是反射）。
 但是显而易见 `C++` 没有反射。
 
@@ -870,7 +1006,7 @@ int main() {
 
 ### 运行结果
 
-```
+```text
 1
 4
   0 0 0 0
@@ -1002,7 +1138,7 @@ int main(){
 
 [运行结果](https://godbolt.org/z/nGvjqo9bq)
 
-```
+```text
 X
 Y
 ```
@@ -1196,123 +1332,12 @@ int main(){
 
 至于 `for_each_member` 没必要再介绍，很普通简单的分支逻辑而已，只不过是用了编译期的分支。
 
----
-
-#### 补充说明
+### 补充说明
 
 我们给出的 `C++20` 或 `C++17` 的 `size` 的实现是有问题的，简单的说，**它没办法处理聚合类型存储数组的问题**。 在题目开头我们也说了。
+我们拿 [`boost::pfr`](https://www.boost.org/doc/libs/1_82_0/doc/html/boost_pfr/tutorial.html) 的行为作为参考，我们采用1.82.0版本。
 
-我们拿 [`boost::pfr`](https://www.boost.org/doc/libs/1_82_0/doc/html/boost_pfr/tutorial.html) 的行为作为参考，我们采用 [`Boost1.82.0`](https://www.boost.org/doc/libs/1_82_0/doc/html/boost_pfr/tutorial.html) 版本。
-
-<details>
-<summary><h5>首先是 C++20 的写法结果的对比 </summary></h5>
-
-```cpp
-#include <iostream>
-#include<boost/pfr/functions_for.hpp>
-
-struct init {
-    template <typename T>
-    operator T(); // 无定义 我们需要一个可以转换为任何类型的在以下特殊语境中使用的辅助类
-};
-
-template<typename T>
-consteval size_t size(auto&&...Args) {
-    if constexpr (!requires{T{ Args... }; }) {
-        return sizeof...(Args) - 1;
-    }
-    else {
-        return size<T>(Args..., init{});
-    }
-}
-struct X { int a{ 1 }, b{ 2 }, c[2]{ 3, 4 }; };
-
-int main(){
-    std::cout << size<X>() << '\n';
-    std::cout << boost::pfr::tuple_size_v<X> << '\n';//调pfr库
-
-    std::cout << std::is_aggregate_v<X> << '\n';
-}
-```
-
-##### [运行结果](https://godbolt.org/z/dWEK6beoK)
-
-```plain
-4
-4
-1
-```
-
-</details>
-
-<details>
-<summary><h5>C++17 的写法结果的对比 </summary></h5>
-
-```cpp
-#include <iostream>
-#include <boost/pfr/functions_for.hpp>
-
-struct init {
-    template <typename T>
-    operator T(); // 无定义 我们需要一个可以转换为任何类型的在以下特殊语境中使用的辅助类
-};
-
-template <unsigned I>
-struct tag :tag<I - 1> {}; //模板递归展开 继承 用来规定重载的匹配顺序 如果不这么写，匹配是无序的
-template <>
-struct tag<0> {};
-
-template <typename T>//SFIANE
-constexpr auto size_(tag<4>) -> decltype(T{ init{}, init{}, init{}, init{} }, 0u)
-{
-    return 4u;
-}
-template <typename T>
-constexpr auto size_(tag<3>) -> decltype(T{ init{}, init{}, init{} }, 0u)
-{
-    return 3u;
-}
-template <typename T>
-constexpr auto size_(tag<2>) -> decltype(T{ init{}, init{} }, 0u)
-{
-    return 2u;
-}
-template <typename T>
-constexpr auto size_(tag<1>) -> decltype(T{ init{} }, 0u)
-{
-    return 1u;
-}
-template <typename T>
-constexpr auto size_(tag<0>) -> decltype(T{}, 0u)
-{
-    return 0u;
-}
-
-template <typename T>
-constexpr size_t size() {
-    static_assert(std::is_aggregate_v<T>); //检测是否为聚合类型
-    return size_<T>(tag<4>{}); //这里就是要求从tag<4>开始匹配，一直到tag<0>
-}
-
-struct X { int a{1}, b{2}, c[2]{3, 4}; };
-
-int main(){
-    std::cout << size<X>() << '\n';
-    std::cout << boost::pfr::tuple_size_v<X> << '\n';
-
-    std::cout << std::is_aggregate_v<X> << '\n';
-}
-```
-
-##### [运行结果](https://godbolt.org/z/jc58bx399)
-
-```
-4
-4
-1
-```
-
-</details>
+参见 [示例代码](src/群友提交/第10题/with_boost_pfr.md)
 
 ---
 
@@ -1344,7 +1369,7 @@ int main(){
 
 你在使用 `gcc` 并且设置标准在 C++20 之前，会得到 [编译器的提示信息](https://godbolt.org/z/rdjjYEcje)
 
-```
+```text
 error: new initializer expression list treated as compound expression [-fpermissive]
   187 |         { ::new((void *)__p) _Up(std::forward<_Args>(__args)...); }
       |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1440,7 +1465,7 @@ int main()
 
 ### [运行结果](https://godbolt.org/z/qYn74qGee)
 
-```
+```text
 X()
 X()
 X(const X&)
@@ -1461,15 +1486,18 @@ test end
 ### [群友提交](src/群友提交/第12题)
 
 答题者：[`yuzhiy`](src/群友提交/第12题/yuzhiy.cpp)
+
 ```cpp
 template<typename...Args>
 auto make_vector(Args&&...args)->decltype(auto){
     return std::vector({std::forward<Args>(args)...});
 }
 ```
->没啥问题，就是 `auto` 占位，后置返回类型 `decltype(auto)` 没意义。
+
+> 没啥问题，就是 `auto` 占位，后置返回类型 `decltype(auto)` 没意义。
 
 答题者：[`Matrix-A`](src/群友提交/第12题/Matrix-A.cpp)
+
 ```cpp
 auto make_vector(auto&&... args) {
     std::vector<std::common_type_t<decltype(args)...>> temp;
@@ -1477,7 +1505,8 @@ auto make_vector(auto&&... args) {
     return temp;
 }
 ```
->用 `emplace_back()` 比直接往 `vector` 的初始化器里面传入参数要少拷贝。可[自行测试](https://gcc.godbolt.org/z/3bo7oKfEq)。
+
+> 用 `emplace_back()` 比直接往 `vector` 的初始化器里面传入参数要少拷贝。可[自行测试](https://gcc.godbolt.org/z/3bo7oKfEq)。
 
 ### 标准答案
 
@@ -1487,7 +1516,8 @@ constexpr auto make_vector(T&&t,Args&&...args) {
     return std::vector<std::remove_cvref_t<T>>{ std::forward<T>(t), std::forward<Args>(args)... };
 }
 ```
->这种写法纯属为了解决下面解法提到的问题（即推导问题）
+
+> 这种写法纯属为了解决下面解法提到的问题（即推导问题）
 
 ```cpp
 template<typename...Args>
@@ -1496,23 +1526,22 @@ constexpr auto make_vector(Args&&...args) {
 }
 ```
 
-事实上大多数人看到这段代码会觉得很简单，就这么一行核心代码。
-
-实际上这里有很多坑，如果你没有自己写过不会注意到，即使你自己写过，大多人也并不明白。
+事实上大多数人看到这段代码会觉得很简单，就这么一行核心代码。实际上这里有很多坑，如果你没有自己写过不会注意到，即使你自己写过，大多人也并不明白。
 
 即：**为什么需要 `std::vector({})` 这种形式？如果我不这么做呢？只用 `()` 或者 `{}` 呢？有什么替代方式吗？**
 
 我们如果去掉外面的 `()` 进行编译，会发生一个**编译错误**，编译器提示我们是`static_assert` 中的 `requires` 表达式出错了，但是看不出是哪个错误。
 
 我们去掉 `requires` 表达式中的：
+
 ```cpp
 {
     make_vector(std::vector{1, 2, 3})
 } -> std::same_as<std::vector<std::vector<int>>>;
 ```
 
-这段代码，发现就可以通过编译了，那么问题很简单了，就是：
-* `make_vector(std::vector{1, 2, 3})` 这段代码无法得到 `std::vector<std::vector<int>>` 类型（前提是我们去掉了 `()` ）。
+这段代码，发现就可以通过编译了。那么问题很简单了，就是：
+`make_vector(std::vector{1, 2, 3})` 这段代码无法得到 `std::vector<std::vector<int>>` 类型（前提是我们去掉了 `()` ）。
 
 那么这个问题的本质是什么？
 
@@ -1547,14 +1576,14 @@ Test(std::initializer_list<T>) -> Test<T>;
 
 int main() {
     Test<int> a;
-    Test t{ a,a };//被调用	        会推导为Test<Test<int>>
-    Test t2{ a };//复制构造         会推导为Test<int>
+    Test t{ a,a }; //被调用         会推导为Test<Test<int>>
+    Test t2{ a };  //复制构造       会推导为Test<int>
 }
 ```
 
-#### [运行结果](https://godbolt.org/z/jvKE7Mqhq)：
+#### [运行结果](https://godbolt.org/z/jvKE7Mqhq)
 
-```
+```text
 复制构造
 复制构造
 被调用
@@ -1586,6 +1615,8 @@ auto v2 = make_vector(std::vector{1,2,3});  // std::vector<int>
 ---
 
 ## `13` 关于 `return std::move`
+
+日期：`2023/9/6` 出题人：`mq白`
 
 我们会给出三段使用到了 `return std::move` 代码。
 
@@ -1633,6 +1664,8 @@ struct Test {
 };
 ```
 
+- 难度:**★★★☆☆**
+
 ### [群友提交](src/群友提交/第13题)
 
 ### 标准答案
@@ -1642,3 +1675,156 @@ struct Test {
 1. 函数局部的 `x` 对象是隐式可移动实体，可以调用移动构造，显式 `std::move` 毫无意义，甚至会影响 `NRVO` 优化。
 2. 返回局部的引用，这是悬垂的。
 3. 类的数据成员不是隐式可移动实体,如果不 `std::move`，而是直接 `return x`，重载决议不会选择移动构造。所以有意义。
+
+## `14` 以特殊方法修改命名空间中声明的对象
+
+日期：`2023/12/5` 出题人：`mq白`
+
+给出以下代码，不得修改，要求不得以
+
+- ss::a
+
+- using namespace ss
+
+- namespace x = ss，x::a
+  
+- using ss::a
+
+这些方式去修改命名空间 `ss` 中的对象 **a**，并且满足运行结果。
+
+需要真的修改了 a，而不是别的东西，诸如更改入口函数等。
+
+**不要求你的做法完全符合标准**。
+
+```cpp
+#include<iostream>
+
+namespace ss {
+    int a = 0;
+}
+
+int main() {
+    // todo..
+    std::cout << ss::a << '\n'; 
+}
+```
+
+### 运行结果
+
+```txt
+100
+```
+
+- 难度: **★★★★☆**
+
+> 本题其实是“**魔法**”题，并不是常规的那些，你可能会对本题的存在一些质疑，认为这种东西毫无价值，但这恰恰考察的是别的基础知识，如**符号修饰、链接、内存布局**。
+> 越是写的奇特，诡异，**往往令人印象深刻**，这也正是教学的方式。
+> 举个例子，别人和你说“C/C++ 的 #include 的本质是复制”，你可能没什么感觉，但是如果直接写一段代码呢？
+
+```cpp
+int arr[] = {
+#include"1.txt"
+};
+```
+
+> **即使这种形式基本上没有任何的实际用途和价值，但是它能教会各位，让各位印象深刻，那也足够了。**
+
+### 群友提交
+
+答题者：[**`Matrix-A`**](src/群友提交/第14题/Matrix-A.cpp)
+
+```cpp
+#include<iostream>
+#include<cstdint>
+
+namespace ss {
+    int a = 0;
+}
+
+#if defined(_MSC_VER)
+#define MAIN_ATTRIBUTES __pragma(optimize("", off))
+#elif defined(__clang__)
+#define MAIN_ATTRIBUTES [[clang::optnone]]
+#else
+#define MAIN_ATTRIBUTES [[gnu::optimize(0)]]
+#endif
+
+int b = 0;
+MAIN_ATTRIBUTES
+int main() {
+    *(int*)((uint8_t*)&b - sizeof(int)) = 100;
+    *(int*)((uint8_t*)&b + sizeof(int)) = 100;
+    std::cout << ss::a << '\n';
+}
+```
+
+### 标准答案
+
+#### 利用符号来解决
+
+```cpp
+#include<iostream>
+
+extern "C"{
+    namespace ss {
+        int a = 0;
+    }
+}
+
+extern "C" int a;
+
+int main() {
+    a = 100;
+    std::cout << ss::a << '\n'; 
+}
+```
+
+> 利用符号解决，[实测](https://godbolt.org/z/os3WM4b9W)三平台通用（但显然不是标准规定的）。
+
+`extern "C"{ }` 包含了命名空间 `ss` ，让对象 `a` 没有了额外的符号修饰，就是单纯的 `a`，如果不使用 `extern "C"` 包含，`ss::a` 的符号得是 **`_ZN2ss1aE`**。
+
+全局作用域的 `extern "C" int a;` 使用 `extern "C"` 能让对象 `a` 没有额外的符号修饰。也就是操作这个 `a` 等价于 `ss::a`，因为他们**编译后的符号是一样的**。
+
+也可以使用一些不太高明的方式，不需要用到 `extern "C"`
+
+```cpp
+#include<iostream>
+
+int a = 0;
+
+namespace ss{
+    int a = 0;
+}
+
+extern int _ZN2ss1aE;
+
+int main(){
+    _ZN2ss1aE = 100;
+    std::cout<<ss::a<<'\n';
+} 
+```
+
+不过这种方式是写死的，并且这只支持 `gcc` 以及 `clang`，更多的解释看之前的[博客](https://zhuanlan.zhihu.com/p/667571439)。
+
+#### 直接修改内存
+
+```cpp
+#include<iostream>
+#include<cstdint>
+
+namespace ss {
+    int a = 0;
+}
+
+int b = 0;
+
+int main() {
+    *(int*)((uint8_t*)&b - sizeof(int)) = 100;
+    *(int*)((uint8_t*)&b + sizeof(int)) = 100;
+    std::cout << ss::a << '\n';
+}
+```
+
+没啥说的，直接 UB 越界修改内存就完事了，在全局声明一个 `b` 只是用来做基地址进行偏移罢了。
+
+存在两个修改的原因是因为ss::a和b的前后顺序是不确定的，至少msvc和（clang、gcc）是不一样的，可能和系统有关。

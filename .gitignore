@@ -1,2 +1,14 @@
 /.vs
 /.gitignore
+/_minted-test
+/_minted-constitution
+*.aux
+*.log
+*.aux
+*.fdb_latexmk
+*.fls
+*.gz
+*.out
+*.pygstyle
+*.pygtex
+*.toc
